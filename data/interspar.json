@@ -1,0 +1,109 @@
+{
+  "restaurant": "INTERSPAR Jörgerstraße",
+  "location": {
+    "street": "Jörgerstraße 24",
+    "postalCode": "1170",
+    "city": "Wien"
+  },
+  "source": "https://www.interspar.at/gastronomie/menueplan",
+  "menuUrl": "https://flugblatt.interspar.at/menuplane/menuplan-kw42/",
+  "fetchedAt": "2026-10-15T18:12:12.928Z",
+  "days": [
+    {
+      "date": "2026-10-12",
+      "day": "Montag",
+      "menus": [
+        {
+          "name": "Klassisch",
+          "description": "Spaghetti Bolognese mit Gran Moravia",
+          "price": 9.4
+        },
+        {
+          "name": "Vegetarisch",
+          "description": "Brokkoli-Käse-Strudel mit Sauce Hollandaise und Petersilienkartoffeln",
+          "price": 8.4
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "day": "Dienstag",
+      "menus": [
+        {
+          "name": "Klassisch",
+          "description": "Huhn süß-sauer mit Ananas, Karotten und Basmatireis",
+          "price": 9.4
+        },
+        {
+          "name": "Vegetarisch",
+          "description": "Kürbis-Lauch-Quiche mit Knoblauchdip und Blattsalat",
+          "price": 8.4
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "day": "Mittwoch",
+      "menus": [
+        {
+          "name": "Klassisch",
+          "description": "Faschierter Braten mit Bratensauce, Kartoffelpüree und Röstzwiebeln",
+          "price": 9.4
+        },
+        {
+          "name": "Vegetarisch",
+          "description": "Karfiol-Laibchen mit Kräuter-Crème-Fraîche und Kartoffeln",
+          "price": 8.4
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "day": "Donnerstag",
+      "menus": [
+        {
+          "name": "Klassisch",
+          "description": "Szegediner Gulasch von der Schweinsschulter, mit Rahm und Salzkartoffeln",
+          "price": 9.4
+        },
+        {
+          "name": "Vegetarisch",
+          "description": "Gemüse-Ravioli mit Tomatenragout und Gran Moravia",
+          "price": 8.4
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "day": "Freitag",
+      "menus": [
+        {
+          "name": "Klassisch",
+          "description": "Gebackenes Seelachsfilet MSC zertifiziert, mit Petersilien-kartoffeln und Sauce Tartare",
+          "price": 9.4
+        },
+        {
+          "name": "Vegetarisch",
+          "description": "Grießflammerienockerl mit Zwetschkenröster",
+          "price": 8.4
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "day": "Samstag",
+      "menus": [
+        {
+          "name": "Klassisch",
+          "description": "Bauern Cordon bleu Gemüsegröstl SA mit Speck und Käse gefüllt, dazu Petersilienkartoffeln",
+          "price": 9.4
+        },
+        {
+          "name": "Vegetarisch",
+          "description": "mit Spiegelei",
+          "price": 8.4
+        }
+      ]
+    }
+  ]
+}

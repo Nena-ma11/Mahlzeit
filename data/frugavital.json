@@ -1,0 +1,116 @@
+{
+  "restaurant": "Fruga Vital",
+  "source": "https://frugavital.at/wp-content/uploads/2026/10/Fruga_Vital_Speiseplan_12102026.pdf",
+  "menuPlan": "PDF Download Menüplan 12.10. bis 17.10.2026",
+  "fetchedAt": "2026-10-15T18:12:03.683Z",
+  "days": [
+    {
+      "day": "Montag",
+      "date": "12.10.2026",
+      "menus": [
+        {
+          "description": "Hascheehörnchen mit Salat",
+          "price": 10.9
+        },
+        {
+          "description": "Naturschnitzel mit Speckfisolen und Salzkartoffeln",
+          "price": 13.9
+        },
+        {
+          "description": "Gebackenes Hühnerfilet im Parmesan-Mantel mit Erdäpfelsalat",
+          "price": 13.9
+        }
+      ]
+    },
+    {
+      "day": "Dienstag",
+      "date": "13.10.2026",
+      "menus": [
+        {
+          "description": "Gekochtes Rindfleisch mit Semmelkren",
+          "price": 15.9
+        },
+        {
+          "description": "Faschierter Braten mit Püree und Röstzwiebel",
+          "price": 12.9
+        },
+        {
+          "description": "Puten-Rahm-Gulasch mit Teigwaren",
+          "price": 13.9
+        }
+      ]
+    },
+    {
+      "day": "Mittwoch",
+      "date": "14.10.2026",
+      "menus": [
+        {
+          "description": "Veganes Gemüsecurry mit Reis",
+          "price": 9.9
+        },
+        {
+          "description": "Wildragout mit Gemüse, Serviettenknödel und Preiselbeeren",
+          "price": 15.9
+        },
+        {
+          "description": "Gefüllte Paprika mit Tomatensauce und Salzkartoffeln",
+          "price": 13.9
+        }
+      ]
+    },
+    {
+      "day": "Donnerstag",
+      "date": "15.10.2026",
+      "menus": [
+        {
+          "description": "Gebackenes Surschnitzel mit Erdäpfelsalat",
+          "price": 13.9
+        },
+        {
+          "description": "Cremespinat mit Erdäpfelschmarrn und Spiegelei",
+          "price": 10.9
+        },
+        {
+          "description": "Geschmorte Rinderschulter in Zwiebelsauce mit Teigwaren",
+          "price": 15.9
+        }
+      ]
+    },
+    {
+      "day": "Freitag",
+      "date": "16.10.2026",
+      "menus": [
+        {
+          "description": "Kabeljaufilet gebacken mit Erdäpfelsalat",
+          "price": 15.9
+        },
+        {
+          "description": "Fisch Natur mit Gemüse und Erdäpfel",
+          "price": 13.9
+        },
+        {
+          "description": "Schweinsbraten mit Knödel und Krautsalat",
+          "price": 13.9
+        },
+        {
+          "description": "Gebackener Topfenkuchen mit Beerenmus",
+          "price": 9.9
+        }
+      ]
+    },
+    {
+      "day": "Samstag",
+      "date": "17.10.2026",
+      "menus": [
+        {
+          "description": "Spaghetti Carbonara mit Parmesan",
+          "price": 10.9
+        },
+        {
+          "description": "Beiriedschnitte mit Julienne Gemüse und Braterdäpfel",
+          "price": 15.9
+        }
+      ]
+    }
+  ]
+}

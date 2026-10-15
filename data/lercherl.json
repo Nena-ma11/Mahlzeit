@@ -1,0 +1,97 @@
+{
+  "restaurant": "Lercherl",
+  "source": "https://lercherl.at/wochenmenue/",
+  "fetchedAt": "2026-10-15T18:12:19.015Z",
+  "days": [
+    {
+      "date": "2026-10-12",
+      "day": "Montag",
+      "soup": "Tagessuppe",
+      "menus": [
+        {
+          "name": "Menü",
+          "description": "Schinkenfleckerl mit Blattsalat",
+          "price": 9.9
+        },
+        {
+          "name": "Alternative",
+          "description": "Gebackener Karfiol mit Sauce Tartare und Blattsalat",
+          "price": 9.9
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "day": "Dienstag",
+      "soup": "Tagessuppe",
+      "menus": [
+        {
+          "name": "Menü",
+          "description": "Gebackenes Schweinsschnitzel mit Erdäpfel-Vogerlsalat",
+          "price": 9.9
+        },
+        {
+          "name": "Alternative",
+          "description": "Cremespinat mit Rösti und Spiegelei",
+          "price": 9.9
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "day": "Mittwoch",
+      "soup": "Tagessuppe",
+      "menus": [
+        {
+          "name": "Menü",
+          "description": "Gebratene Hühnerkeule mit Reis",
+          "price": 9.9
+        },
+        {
+          "name": "Alternative",
+          "description": "Gebackener Kürbis mit Sauce Tartare und Böattsalat",
+          "price": 9.9
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "day": "Donnerstag",
+      "soup": "Tagessuppe",
+      "menus": [
+        {
+          "name": "Menü",
+          "description": "1/4 Backhendl mit Erdäpfelsalat",
+          "price": 9.9
+        },
+        {
+          "name": "Alternative",
+          "description": "Kürbisgemüse mit Reis",
+          "price": 9.9
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "day": "Freitag",
+      "soup": "Tagessuppe",
+      "menus": [
+        {
+          "name": "Menü",
+          "description": "Gebackenes Buntbarschfilet mit Erdäpfelsalat",
+          "price": 10.9
+        },
+        {
+          "name": "Alternative",
+          "description": "Kaiserschmarren mit Marillenröster",
+          "price": 9.9
+        },
+        {
+          "name": "Freitags-Spezial",
+          "description": "Zander gebraten oder gebacken als Freitagsmenü mit Suppe",
+          "price": 12.9
+        }
+      ]
+    }
+  ]
+}

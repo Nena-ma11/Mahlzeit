@@ -1,0 +1,23 @@
+{
+  "restaurant": "O'Sfizio",
+  "source": "https://www.osfizio.at/mittagsmenus/",
+  "fetchedAt": "2026-10-15T18:12:01.960Z",
+  "days": [
+    {
+      "date": "2026-10-15",
+      "day": "Donnerstag",
+      "menus": [
+        {
+          "name": "1-Mittagsmenü",
+          "description": "Gemischter Salat | Sfiziotta (Römische Pinsa) mit Tomatensauce, Mozzarella, Pancetta, Radicchio (A,G)",
+          "price": 11.9
+        },
+        {
+          "name": "2-Mittagsmenü",
+          "description": "Spinatcremesuppe (G/L) | Pasta mit Basilikum-Pesto, Kartoffeln und Zucchini (A/G/H/L)",
+          "price": 10.9
+        }
+      ]
+    }
+  ]
+}

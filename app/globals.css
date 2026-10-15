@@ -1,26 +1,417 @@
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f7f2;
+  --surface: #ffffff;
+  --green: #234d3d;
+  --green-dark: #19382c;
+  --green-light: #e5eee2;
+  --text: #26352d;
+  --muted: #6c786f;
+  --border: #dfe5dc;
+  --accent: #b77939;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* Kopfbereich */
+
+.site-header {
+  background: #edf2e9;
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-image {
+  display: block;
+  flex-shrink: 0;
+  width: 100px;
+  height: 76px;
+  object-fit: contain;
+}
+
+.brand h1 {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+}
+
+.brand p {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Wochenübersicht */
+
+.week-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 34px 0 24px;
+}
+
+.week-header h2 {
+  margin: 4px 0 0;
+  color: var(--green-dark);
+  font-size: 28px;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.week-header p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* Vorbereitung für die Wochentagsnavigation */
+
+.weekday-nav {
+  display: flex;
+  gap: 10px;
+  margin: 24px 0 32px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.weekday-button {
+  flex: 1;
+  min-width: 70px;
+  padding: 12px 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: white;
+  color: var(--green);
+  cursor: pointer;
+  text-align: center;
+  transition: background 150ms ease,
+    color 150ms ease,
+    border-color 150ms ease;
+}
+
+.weekday-button:hover {
+  border-color: var(--green);
+  background: var(--green-light);
+}
+
+.weekday-button.is-active {
+  border-color: var(--green);
+  background: var(--green);
+  color: white;
+}
+
+.weekday-button .weekday-name {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.weekday-button .weekday-date {
+  display: block;
+  margin-top: 3px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+/* Tagesabschnitte */
+
+.week {
+  padding-bottom: 30px;
+}
+
+.day-section {
+  margin: 30px 0 42px;
+  scroll-margin-top: 20px;
+}
+
+.day-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.day-heading h2 {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.day-heading span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Restaurantkarten */
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.restaurant-card {
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 3px 12px rgb(32 55 40 / 4%);
+  transition: border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.restaurant-card:hover {
+  border-color: #c6d4c4;
+  box-shadow: 0 6px 18px rgb(32 55 40 / 7%);
+}
+
+.restaurant-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.restaurant-header h3 {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.restaurant-header p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.source-link {
+  flex-shrink: 0;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.source-link:hover {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+
+/* Menüeinträge */
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid #edf0eb;
+}
+
+.menu-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.menu-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.menu-name {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.menu-description {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.menu-price {
+  flex-shrink: 0;
+  color: var(--green-dark);
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Suppe und fehlende Menüs */
+
+.soup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f3f6ef;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.soup-label {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.no-menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 13px;
+  border-radius: 10px;
+  background: #f5f7f3;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Fußbereich */
+
+.footer {
+  margin-top: 15px;
+  padding: 25px 0;
+  border-top: 1px solid var(--border);
+  background: #edf2e9;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Smartphone und Tablet */
+
+@media (max-width: 700px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .site-header {
+    padding: 22px 0;
+  }
+
+  .brand-image {
+  width: 80px;
+  height: 60px;
+}
+  .brand h1 {
+    font-size: 25px;
+  }
+
+  .brand p {
+    font-size: 13px;
+  }
+
+  .week-header {
+    margin: 26px 0 20px;
+  }
+
+  .week-header h2 {
+    font-size: 25px;
+  }
+
+  .weekday-nav {
+    gap: 7px;
+    margin: 20px 0 26px;
+  }
+
+  .weekday-button {
+    min-width: 58px;
+    padding: 10px 7px;
+  }
+
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .restaurant-card {
+    padding: 19px;
+    border-radius: 14px;
+  }
+
+  .restaurant-header h3 {
+    font-size: 18px;
+  }
+
+  .day-heading h2 {
+    font-size: 21px;
+  }
+
+  .day-section {
+    margin: 25px 0 34px;
+  }
+
+  .menu-item {
+    gap: 10px;
+  }
+}
+
